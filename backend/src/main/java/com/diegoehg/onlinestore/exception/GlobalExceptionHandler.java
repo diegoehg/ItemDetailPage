@@ -12,4 +12,9 @@ public class GlobalExceptionHandler {
     public ResponseEntity<Product> handleResourceNotFoundException(ResourceNotFoundException e) {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<Product> handleException(Exception e) {
+        return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+    }
 }
