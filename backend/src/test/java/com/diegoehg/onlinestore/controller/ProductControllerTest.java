@@ -2,6 +2,7 @@ package com.diegoehg.onlinestore.controller;
 
 import com.diegoehg.onlinestore.exception.ResourceNotFoundException;
 import com.diegoehg.onlinestore.model.Product;
+import com.diegoehg.onlinestore.model.ResponseStatus;
 import com.diegoehg.onlinestore.service.ProductService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
@@ -68,11 +69,13 @@ class ProductControllerTest {
         mockMvc.perform(get("/api/products"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$", hasSize(2)))
-                .andExpect(jsonPath("$[0].id", is(1)))
-                .andExpect(jsonPath("$[0].title", is("Product 1")))
-                .andExpect(jsonPath("$[1].id", is(2)))
-                .andExpect(jsonPath("$[1].title", is("Product 2")));
+                .andExpect(jsonPath("$.status", is(ResponseStatus.SUCCESS.toString())))
+                .andExpect(jsonPath("$.code", is(200)))
+                .andExpect(jsonPath("$.data", hasSize(2)))
+                .andExpect(jsonPath("$.data[0].id", is(1)))
+                .andExpect(jsonPath("$.data[0].title", is("Product 1")))
+                .andExpect(jsonPath("$.data[1].id", is(2)))
+                .andExpect(jsonPath("$.data[1].title", is("Product 2")));
     }
 
     @Test
@@ -82,8 +85,10 @@ class ProductControllerTest {
         mockMvc.perform(get("/api/products/1"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$.id", is(1)))
-                .andExpect(jsonPath("$.title", is("Product 1")));
+                .andExpect(jsonPath("$.status", is(ResponseStatus.SUCCESS.toString())))
+                .andExpect(jsonPath("$.code", is(200)))
+                .andExpect(jsonPath("$.data.id", is(1)))
+                .andExpect(jsonPath("$.data.title", is("Product 1")));
     }
 
     @Test
@@ -91,7 +96,11 @@ class ProductControllerTest {
         when(productService.getProductById(3L)).thenReturn(Optional.empty());
 
         mockMvc.perform(get("/api/products/3"))
-                .andExpect(status().isNotFound());
+                .andExpect(status().isNotFound())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(jsonPath("$.status", is(ResponseStatus.ERROR.toString())))
+                .andExpect(jsonPath("$.code", is(404)))
+                .andExpect(jsonPath("$.message", is("Product with ID 3 not found")));
     }
 
     @Test
@@ -118,8 +127,10 @@ class ProductControllerTest {
                 .content(objectMapper.writeValueAsString(newProduct)))
                 .andExpect(status().isCreated())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$.id", is(3)))
-                .andExpect(jsonPath("$.title", is("New Product")));
+                .andExpect(jsonPath("$.status", is(ResponseStatus.SUCCESS.toString())))
+                .andExpect(jsonPath("$.code", is(201)))
+                .andExpect(jsonPath("$.data.id", is(3)))
+                .andExpect(jsonPath("$.data.title", is("New Product")));
     }
 
     @Test
@@ -146,12 +157,16 @@ class ProductControllerTest {
                 .content(objectMapper.writeValueAsString(updatedProduct)))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$.id", is(1)))
-                .andExpect(jsonPath("$.title", is("Updated Product 1")));
+                .andExpect(jsonPath("$.status", is(ResponseStatus.SUCCESS.toString())))
+                .andExpect(jsonPath("$.code", is(200)))
+                .andExpect(jsonPath("$.data.id", is(1)))
+                .andExpect(jsonPath("$.data.title", is("Updated Product 1")));
     }
 
     @Test
     void updateProduct_whenProductDoesNotExist() throws Exception {
+        ResourceNotFoundException exception = new ResourceNotFoundException("Product", "3");
+
         Product updatedProduct = new Product(
                 "Updated Product 1",
                 "Updated description for product 1",
@@ -159,12 +174,16 @@ class ProductControllerTest {
                 new BigDecimal("129.99")
         );
 
-        when(productService.updateProduct(eq(3L), any(Product.class))).thenThrow(new ResourceNotFoundException("Product", "3"));
+        when(productService.updateProduct(eq(3L), any(Product.class))).thenThrow(exception);
 
         mockMvc.perform(put("/api/products/3")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(updatedProduct)))
-                .andExpect(status().isNotFound());
+                .andExpect(status().isNotFound())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(jsonPath("$.status", is(ResponseStatus.ERROR.toString())))
+                .andExpect(jsonPath("$.code", is(404)))
+                .andExpect(jsonPath("$.message", is(exception.getMessage())));
     }
 
     @Test
@@ -172,6 +191,9 @@ class ProductControllerTest {
         doNothing().when(productService).deleteProduct(1L);
 
         mockMvc.perform(delete("/api/products/1"))
-                .andExpect(status().isNoContent());
+                .andExpect(status().isNoContent())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(jsonPath("$.status", is(ResponseStatus.SUCCESS.toString())))
+                .andExpect(jsonPath("$.code", is(204)));
     }
 }

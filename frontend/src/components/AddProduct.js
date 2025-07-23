@@ -88,11 +88,13 @@ const AddProduct = ({ onBack, onProductAdded }) => {
         body: JSON.stringify(productData)
       });
       
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status}`);
+      const responseData = await response.json();
+      
+      if (responseData.status !== 'SUCCESS') {
+        throw new Error(responseData.message || `Error: ${response.status}`);
       }
       
-      const savedProduct = await response.json();
+      const savedProduct = responseData.data;
       
       // Call the callback to inform parent component
       if (onProductAdded) {

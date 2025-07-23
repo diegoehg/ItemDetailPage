@@ -22,9 +22,13 @@ function App() {
         }
         return response.json();
       })
-      .then(data => {
-        setProducts(data);
-        setLoading(false);
+      .then(response => {
+        if (response.status === 'SUCCESS') {
+          setProducts(response.data);
+          setLoading(false);
+        } else {
+          throw new Error(response.message || 'Failed to load products');
+        }
       })
       .catch(error => {
         console.error('Error fetching products:', error);

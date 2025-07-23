@@ -103,11 +103,13 @@ const EditProduct = ({ product, onBack, onProductUpdated }) => {
         body: JSON.stringify(productData)
       });
       
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status}`);
+      const responseData = await response.json();
+      
+      if (responseData.status !== 'SUCCESS') {
+        throw new Error(responseData.message || `Error: ${response.status}`);
       }
       
-      const updatedProduct = await response.json();
+      const updatedProduct = responseData.data;
       
       // Call the callback to inform parent component
       if (onProductUpdated) {
