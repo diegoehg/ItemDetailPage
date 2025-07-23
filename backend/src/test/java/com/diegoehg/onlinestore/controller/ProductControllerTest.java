@@ -122,7 +122,7 @@ class ProductControllerTest {
     }
 
     @Test
-    void updateProduct() throws Exception {
+    void updateProduct_whenProductExists() throws Exception {
         Product updatedProduct = new Product(
                 "Updated Product 1",
                 "Updated description for product 1",
@@ -139,9 +139,7 @@ class ProductControllerTest {
         savedUpdatedProduct.setId(1L);
 
         when(productService.updateProduct(eq(1L), any(Product.class))).thenReturn(savedUpdatedProduct);
-        when(productService.updateProduct(eq(3L), any(Product.class))).thenThrow(new RuntimeException("Product not found"));
 
-        // Test successful update
         mockMvc.perform(put("/api/products/1")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(updatedProduct)))
@@ -149,11 +147,22 @@ class ProductControllerTest {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.id", is(1)))
                 .andExpect(jsonPath("$.title", is("Updated Product 1")));
+    }
 
-        // Test product not found
+    @Test
+    void updateProduct_whenProductDoesNotExist() throws Exception {
+        Product updatedProduct = new Product(
+                "Updated Product 1",
+                "Updated description for product 1",
+                Arrays.asList("updated-image1.jpg", "updated-image2.jpg"),
+                new BigDecimal("129.99")
+        );
+
+        when(productService.updateProduct(eq(3L), any(Product.class))).thenThrow(new RuntimeException("Product not found"));
+
         mockMvc.perform(put("/api/products/3")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString(updatedProduct)))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(updatedProduct)))
                 .andExpect(status().isNotFound());
     }
 
