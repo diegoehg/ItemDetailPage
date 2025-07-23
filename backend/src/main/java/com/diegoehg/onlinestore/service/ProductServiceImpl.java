@@ -1,5 +1,6 @@
 package com.diegoehg.onlinestore.service;
 
+import com.diegoehg.onlinestore.exception.ResourceNotFoundException;
 import com.diegoehg.onlinestore.model.Product;
 import com.diegoehg.onlinestore.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,7 +45,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Product updateProduct(Long id, Product productDetails) {
         Product product = productRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Product not found with id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Product", String.valueOf(id)));
 
         product.setTitle(productDetails.getTitle());
         product.setDescription(productDetails.getDescription());

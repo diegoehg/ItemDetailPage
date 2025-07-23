@@ -1,5 +1,6 @@
 package com.diegoehg.onlinestore.controller;
 
+import com.diegoehg.onlinestore.exception.ResourceNotFoundException;
 import com.diegoehg.onlinestore.model.Product;
 import com.diegoehg.onlinestore.service.ProductService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -158,7 +159,7 @@ class ProductControllerTest {
                 new BigDecimal("129.99")
         );
 
-        when(productService.updateProduct(eq(3L), any(Product.class))).thenThrow(new RuntimeException("Product not found"));
+        when(productService.updateProduct(eq(3L), any(Product.class))).thenThrow(new ResourceNotFoundException("Product", "3"));
 
         mockMvc.perform(put("/api/products/3")
                         .contentType(MediaType.APPLICATION_JSON)
