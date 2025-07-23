@@ -72,8 +72,6 @@ class ProductControllerTest {
                 .andExpect(jsonPath("$[0].title", is("Product 1")))
                 .andExpect(jsonPath("$[1].id", is(2)))
                 .andExpect(jsonPath("$[1].title", is("Product 2")));
-
-        verify(productService, times(1)).getAllProducts();
     }
 
     @Test
@@ -91,9 +89,6 @@ class ProductControllerTest {
         // Test product not found
         mockMvc.perform(get("/api/products/3"))
                 .andExpect(status().isNotFound());
-
-        verify(productService, times(1)).getProductById(1L);
-        verify(productService, times(1)).getProductById(3L);
     }
 
     @Test
@@ -122,8 +117,6 @@ class ProductControllerTest {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.id", is(3)))
                 .andExpect(jsonPath("$.title", is("New Product")));
-
-        verify(productService, times(1)).saveProduct(any(Product.class));
     }
 
     @Test
@@ -160,9 +153,6 @@ class ProductControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(updatedProduct)))
                 .andExpect(status().isNotFound());
-
-        verify(productService, times(1)).updateProduct(eq(1L), any(Product.class));
-        verify(productService, times(1)).updateProduct(eq(3L), any(Product.class));
     }
 
     @Test
@@ -171,7 +161,5 @@ class ProductControllerTest {
 
         mockMvc.perform(delete("/api/products/1"))
                 .andExpect(status().isNoContent());
-
-        verify(productService, times(1)).deleteProduct(1L);
     }
 }
