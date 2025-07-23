@@ -75,18 +75,20 @@ class ProductControllerTest {
     }
 
     @Test
-    void getProductById() throws Exception {
+    void getProductById_whenProductExists() throws Exception {
         when(productService.getProductById(1L)).thenReturn(Optional.of(product1));
-        when(productService.getProductById(3L)).thenReturn(Optional.empty());
 
-        // Test successful retrieval
         mockMvc.perform(get("/api/products/1"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.id", is(1)))
                 .andExpect(jsonPath("$.title", is("Product 1")));
+    }
 
-        // Test product not found
+    @Test
+    void getProductById_whenProductDoesNotExist() throws Exception {
+        when(productService.getProductById(3L)).thenReturn(Optional.empty());
+
         mockMvc.perform(get("/api/products/3"))
                 .andExpect(status().isNotFound());
     }
