@@ -80,7 +80,7 @@ class ProductControllerTest {
 
     @Test
     void getProductById_whenProductExists() throws Exception {
-        when(productService.getProductById(1L)).thenReturn(Optional.of(product1));
+        when(productService.getProductById(1L)).thenReturn(product1);
 
         mockMvc.perform(get("/api/products/1"))
                 .andExpect(status().isOk())

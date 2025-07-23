@@ -1,9 +1,9 @@
 package com.diegoehg.onlinestore.service;
 
+import com.diegoehg.onlinestore.exception.ResourceNotFoundException;
 import com.diegoehg.onlinestore.model.Product;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
  * Interface for product service operations
@@ -19,9 +19,10 @@ public interface ProductService {
     /**
      * Retrieves a product by its ID
      * @param id The ID of the product to retrieve
-     * @return Optional containing the product if found, empty otherwise
+     * @return The product if found
+     * @throws ResourceNotFoundException if the product is not found
      */
-    Optional<Product> getProductById(Long id);
+    Product getProductById(Long id);
 
     /**
      * Saves a new product
