@@ -1,48 +1,47 @@
 package com.diegoehg.onlinestore.service;
 
 import com.diegoehg.onlinestore.model.Product;
-import com.diegoehg.onlinestore.repository.ProductRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service
-public class ProductService {
+/**
+ * Interface for product service operations
+ */
+public interface ProductService {
 
-    private final ProductRepository productRepository;
+    /**
+     * Retrieves all products
+     * @return List of all products
+     */
+    List<Product> getAllProducts();
 
-    @Autowired
-    public ProductService(ProductRepository productRepository) {
-        this.productRepository = productRepository;
-    }
+    /**
+     * Retrieves a product by its ID
+     * @param id The ID of the product to retrieve
+     * @return Optional containing the product if found, empty otherwise
+     */
+    Optional<Product> getProductById(Long id);
 
-    public List<Product> getAllProducts() {
-        return productRepository.findAll();
-    }
+    /**
+     * Saves a new product
+     * @param product The product to save
+     * @return The saved product with generated ID
+     */
+    Product saveProduct(Product product);
 
-    public Optional<Product> getProductById(Long id) {
-        return productRepository.findById(id);
-    }
+    /**
+     * Deletes a product by its ID
+     * @param id The ID of the product to delete
+     */
+    void deleteProduct(Long id);
 
-    public Product saveProduct(Product product) {
-        return productRepository.save(product);
-    }
-
-    public void deleteProduct(Long id) {
-        productRepository.deleteById(id);
-    }
-
-    public Product updateProduct(Long id, Product productDetails) {
-        Product product = productRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Product not found with id: " + id));
-
-        product.setTitle(productDetails.getTitle());
-        product.setDescription(productDetails.getDescription());
-        product.setImages(productDetails.getImages());
-        product.setPrice(productDetails.getPrice());
-
-        return productRepository.save(product);
-    }
+    /**
+     * Updates an existing product
+     * @param id The ID of the product to update
+     * @param productDetails The updated product details
+     * @return The updated product
+     * @throws RuntimeException if the product is not found
+     */
+    Product updateProduct(Long id, Product productDetails);
 }
