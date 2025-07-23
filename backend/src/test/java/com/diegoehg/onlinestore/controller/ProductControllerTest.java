@@ -93,14 +93,16 @@ class ProductControllerTest {
 
     @Test
     void getProductById_whenProductDoesNotExist() throws Exception {
-        when(productService.getProductById(3L)).thenReturn(Optional.empty());
+        ResourceNotFoundException exception = new ResourceNotFoundException("Product", "3");
+
+        when(productService.getProductById(3L)).thenThrow(exception);
 
         mockMvc.perform(get("/api/products/3"))
                 .andExpect(status().isNotFound())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.status", is(ResponseStatus.ERROR.toString())))
                 .andExpect(jsonPath("$.code", is(404)))
-                .andExpect(jsonPath("$.message", is("Product with ID 3 not found")));
+                .andExpect(jsonPath("$.message", is(exception.getMessage())));
     }
 
     @Test
@@ -195,5 +197,19 @@ class ProductControllerTest {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.status", is(ResponseStatus.SUCCESS.toString())))
                 .andExpect(jsonPath("$.code", is(204)));
+    }
+
+    @Test
+    void deleteProduct_whenProductDoesNotExist() throws Exception {
+        ResourceNotFoundException exception = new ResourceNotFoundException("Product", "3");
+
+        doThrow(exception).when(productService).deleteProduct(3L);
+
+        mockMvc.perform(delete("/api/products/3"))
+                .andExpect(status().isNotFound())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(jsonPath("$.status", is(ResponseStatus.ERROR.toString())))
+                .andExpect(jsonPath("$.code", is(404)))
+                .andExpect(jsonPath("$.message", is(exception.getMessage())));
     }
 }
