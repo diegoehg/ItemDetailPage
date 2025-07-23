@@ -1,14 +1,28 @@
 import React from 'react';
 import './ProductList.css';
 
-const ProductList = ({ products, onSelectProduct }) => {
-  if (products.length === 0) {
+const ProductList = ({ products, onSelectProduct, onAddProduct, onEditProduct }) => {
+  if (products.length === 0 && !onAddProduct) {
     return <p className="no-products">No products available.</p>;
   }
 
+  // Handle edit button click without triggering the card click
+  const handleEditClick = (e, product) => {
+    e.stopPropagation(); // Prevent the card click event
+    onEditProduct(product);
+  };
+
   return (
     <div className="product-list">
-      <h2>Available Products</h2>
+      <div className="product-list-header">
+        <h2>Available Products</h2>
+        {onAddProduct && (
+          <button className="add-product-btn" onClick={onAddProduct}>
+            Add New Product
+          </button>
+        )}
+      </div>
+      
       <div className="products-grid">
         {products.map(product => (
           <div 
@@ -31,7 +45,17 @@ const ProductList = ({ products, onSelectProduct }) => {
                   ? `${product.description.substring(0, 100)}...`
                   : product.description}
               </p>
-              <button className="view-details-btn">View Details</button>
+              <div className="product-actions">
+                <button className="view-details-btn">View Details</button>
+                {onEditProduct && (
+                  <button 
+                    className="edit-product-btn"
+                    onClick={(e) => handleEditClick(e, product)}
+                  >
+                    Edit
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         ))}
