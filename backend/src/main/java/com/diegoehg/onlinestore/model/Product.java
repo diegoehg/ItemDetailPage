@@ -31,6 +31,10 @@ public class Product {
     @NotNull(message = "Price is required")
     @Positive(message = "Price must be positive")
     private BigDecimal price;
+    
+    @ManyToOne
+    @JoinColumn(name = "seller_id")
+    private Seller seller;
 
     // Default constructor
     public Product() {
@@ -42,6 +46,15 @@ public class Product {
         this.description = description;
         this.images = images;
         this.price = price;
+    }
+    
+    // Constructor with all fields including seller
+    public Product(String title, String description, List<String> images, BigDecimal price, Seller seller) {
+        this.title = title;
+        this.description = description;
+        this.images = images;
+        this.price = price;
+        this.seller = seller;
     }
 
     // Getters and Setters
@@ -84,6 +97,14 @@ public class Product {
     public void setPrice(BigDecimal price) {
         this.price = price;
     }
+    
+    public Seller getSeller() {
+        return seller;
+    }
+    
+    public void setSeller(Seller seller) {
+        this.seller = seller;
+    }
 
     @Override
     public String toString() {
@@ -93,6 +114,7 @@ public class Product {
                 ", description='" + description + '\'' +
                 ", images=" + images +
                 ", price=" + price +
+                ", seller=" + (seller != null ? seller.getId() : null) +
                 '}';
     }
 }
