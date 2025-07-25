@@ -1,5 +1,6 @@
 package com.diegoehg.onlinestore.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -32,8 +33,9 @@ public class Product {
     @Positive(message = "Price must be positive")
     private BigDecimal price;
     
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "seller_id")
+    @JsonBackReference
     private Seller seller;
 
     // Default constructor

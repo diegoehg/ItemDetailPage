@@ -1,5 +1,6 @@
 package com.diegoehg.onlinestore.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 
@@ -17,7 +18,8 @@ public class PaymentMethod {
     @NotBlank(message = "Name is required")
     private String name;
 
-    @ManyToMany(mappedBy = "paymentMethods")
+    @ManyToMany(mappedBy = "paymentMethods", fetch = FetchType.LAZY)
+    @JsonManagedReference
     private Set<Seller> sellers = new HashSet<>();
 
     // Default constructor
