@@ -1,6 +1,6 @@
 package com.diegoehg.onlinestore.controller;
 
-import com.diegoehg.onlinestore.model.Product;
+import com.diegoehg.onlinestore.dto.ProductDTO;
 import com.diegoehg.onlinestore.model.Response;
 import com.diegoehg.onlinestore.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,27 +24,27 @@ public class ProductController {
     }
 
     @GetMapping
-    public ResponseEntity<Response<List<Product>>> getAllProducts() {
-        List<Product> products = productService.getAllProducts();
+    public ResponseEntity<Response<List<ProductDTO>>> getAllProducts() {
+        List<ProductDTO> products = productService.getAllProducts();
         return ResponseEntity.ok(Response.success(products, HttpStatus.OK.value()));
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Response<Product>> getProductById(@PathVariable Long id) {
-        Product product = productService.getProductById(id);
+    public ResponseEntity<Response<ProductDTO>> getProductById(@PathVariable Long id) {
+        ProductDTO product = productService.getProductById(id);
         return ResponseEntity.ok(Response.success(product, HttpStatus.OK.value()));
     }
 
     @PostMapping
-    public ResponseEntity<Response<Product>> createProduct(@Valid @RequestBody Product product) {
-        Product savedProduct = productService.saveProduct(product);
+    public ResponseEntity<Response<ProductDTO>> createProduct(@Valid @RequestBody ProductDTO productDTO) {
+        ProductDTO savedProduct = productService.saveProduct(productDTO);
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(Response.success(savedProduct, HttpStatus.CREATED.value()));
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Response<Product>> updateProduct(@PathVariable Long id, @Valid @RequestBody Product product) {
-        Product updatedProduct = productService.updateProduct(id, product);
+    public ResponseEntity<Response<ProductDTO>> updateProduct(@PathVariable Long id, @Valid @RequestBody ProductDTO productDTO) {
+        ProductDTO updatedProduct = productService.updateProduct(id, productDTO);
         return ResponseEntity.ok(Response.success(updatedProduct, HttpStatus.OK.value()));
     }
 

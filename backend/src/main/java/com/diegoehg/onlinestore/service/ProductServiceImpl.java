@@ -1,11 +1,12 @@
 package com.diegoehg.onlinestore.service;
 
+import com.diegoehg.onlinestore.dto.EntityDTOMapper;
+import com.diegoehg.onlinestore.dto.ProductDTO;
 import com.diegoehg.onlinestore.exception.ResourceNotFoundException;
 import com.diegoehg.onlinestore.model.Product;
 import com.diegoehg.onlinestore.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -23,20 +24,23 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    @Transactional(readOnly = true)
-    public List<Product> getAllProducts() {
-        return productRepository.findAll();
+    public List<ProductDTO> getAllProducts() {
+        List<Product> products = productRepository.findAll();
+        return EntityDTOMapper.toProductDTOList(products);
     }
 
     @Override
-    public Product getProductById(Long id) {
-        return productRepository.findById(id)
+    public ProductDTO getProductById(Long id) {
+        Product product = productRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Product", String.valueOf(id)));
+        return EntityDTOMapper.toProductDTO(product);
     }
 
     @Override
-    public Product saveProduct(Product product) {
-        return productRepository.save(product);
+    public ProductDTO saveProduct(ProductDTO productDTO) {
+        Product product = EntityDTOMapper.toProduct(productDTO);
+        Product savedProduct = productRepository.save(product);
+        return EntityDTOMapper.toProductDTO(savedProduct);
     }
 
     @Override
@@ -46,16 +50,20 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Product updateProduct(Long id, Product productDetails) {
+    public ProductDTO updateProduct(Long id, ProductDTO productDTO) {
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Product", String.valueOf(id)));
 
-        product.setTitle(productDetails.getTitle());
-        product.setDescription(productDetails.getDescription());
-        product.setImages(productDetails.getImages());
-        product.setPrice(productDetails.getPrice());
-        product.setSeller(productDetails.getSeller());
+        product.setTitle(productDTO.getTitle());
+        product.setDescription(productDTO.getDescription());
+        product.setImages(productDTO.getImages());
+        product.setPrice(productDTO.getPrice());
+        
+        if (productDTO.getSeller() != null) {
+            product.setSeller(EntityDTOMapper.toSeller(productDTO.getSeller()));
+        }
 
-        return productRepository.save(product);
+        Product updatedProduct = productRepository.save(product);
+        return EntityDTOMapper.toProductDTO(updatedProduct);
     }
 }

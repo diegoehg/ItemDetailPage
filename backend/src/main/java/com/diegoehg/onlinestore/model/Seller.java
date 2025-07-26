@@ -1,7 +1,5 @@
 package com.diegoehg.onlinestore.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 
@@ -19,17 +17,15 @@ public class Seller {
     @NotBlank(message = "Name is required")
     private String name;
 
-    @OneToMany(mappedBy = "seller", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JsonManagedReference
+    @OneToMany(mappedBy = "seller", cascade = CascadeType.ALL)
     private Set<Product> products = new HashSet<>();
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany
     @JoinTable(
         name = "seller_payment_methods",
         joinColumns = @JoinColumn(name = "seller_id"),
         inverseJoinColumns = @JoinColumn(name = "payment_method_id")
     )
-    @JsonBackReference
     private Set<PaymentMethod> paymentMethods = new HashSet<>();
 
     // Default constructor
