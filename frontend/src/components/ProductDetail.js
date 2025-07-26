@@ -3,6 +3,7 @@ import './ProductDetail.css';
 
 const ProductDetail = ({ product, onBack }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState('');
 
   if (!product) {
     return <div className="product-detail-error">Product not found</div>;
@@ -50,6 +51,32 @@ const ProductDetail = ({ product, onBack }) => {
             <p>{product.description}</p>
           </div>
           <button className="add-to-cart-button">Add to Cart</button>
+          
+          {product.seller && (
+            <div className="seller-info">
+              <h3>Seller Information</h3>
+              <p className="seller-name">{product.seller.name}</p>
+              
+              {product.seller.paymentMethods && product.seller.paymentMethods.length > 0 && (
+                <div className="payment-methods">
+                  <label htmlFor="payment-method-select">Payment Method:</label>
+                  <select 
+                    id="payment-method-select"
+                    value={selectedPaymentMethod}
+                    onChange={(e) => setSelectedPaymentMethod(e.target.value)}
+                    className="payment-method-select"
+                  >
+                    <option value="">Select a payment method</option>
+                    {product.seller.paymentMethods.map((method) => (
+                      <option key={method.id} value={method.id}>
+                        {method.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>
