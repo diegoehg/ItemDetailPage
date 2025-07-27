@@ -1,7 +1,23 @@
 import React from 'react';
 import './ProductList.css';
 
-const ProductList = ({ products, onSelectProduct, onAddProduct, onEditProduct }) => {
+const ProductList = ({ 
+  products, 
+  onSelectProduct, 
+  onAddProduct, 
+  onEditProduct,
+  // Pagination props
+  currentPage,
+  pageSize,
+  totalPages,
+  totalElements,
+  isFirstPage,
+  isLastPage,
+  onPageChange,
+  onPageSizeChange,
+  onNextPage,
+  onPreviousPage
+}) => {
   if (products.length === 0 && !onAddProduct) {
     return <p className="no-products">No products available.</p>;
   }
@@ -60,6 +76,47 @@ const ProductList = ({ products, onSelectProduct, onAddProduct, onEditProduct })
           </div>
         ))}
       </div>
+      
+      {/* Pagination Controls */}
+      {totalPages > 0 && (
+        <div className="pagination-controls">
+          <div className="pagination-info">
+            Showing page {currentPage} of {totalPages} ({totalElements} total items)
+          </div>
+          
+          <div className="pagination-actions">
+            <button 
+              className="pagination-btn" 
+              onClick={onPreviousPage} 
+              disabled={isFirstPage}
+            >
+              Previous
+            </button>
+            
+            <div className="page-size-selector">
+              <label htmlFor="page-size">Items per page:</label>
+              <select 
+                id="page-size" 
+                value={pageSize} 
+                onChange={(e) => onPageSizeChange(Number(e.target.value))}
+              >
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="100">100</option>
+              </select>
+            </div>
+            
+            <button 
+              className="pagination-btn" 
+              onClick={onNextPage} 
+              disabled={isLastPage}
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

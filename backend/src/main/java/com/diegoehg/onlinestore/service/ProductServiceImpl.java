@@ -3,9 +3,13 @@ package com.diegoehg.onlinestore.service;
 import com.diegoehg.onlinestore.dto.EntityDTOMapper;
 import com.diegoehg.onlinestore.dto.ProductDTO;
 import com.diegoehg.onlinestore.exception.ResourceNotFoundException;
+import com.diegoehg.onlinestore.model.PagedResponse;
 import com.diegoehg.onlinestore.model.Product;
 import com.diegoehg.onlinestore.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -27,6 +31,24 @@ public class ProductServiceImpl implements ProductService {
     public List<ProductDTO> getAllProducts() {
         List<Product> products = productRepository.findAll();
         return EntityDTOMapper.toProductDTOList(products);
+    }
+
+    @Override
+    public PagedResponse<ProductDTO> getProductsPaginated(int page, int size) {
+        Pageable pageable = PageRequest.of(page - 1, size);
+        Page<Product> productPage = productRepository.findAll(pageable);
+
+        List<ProductDTO> productDTOs = EntityDTOMapper.toProductDTOList(productPage.getContent());
+
+        return new PagedResponse<>(
+                productDTOs,
+                page,
+                size,
+                productPage.getTotalElements(),
+                productPage.getTotalPages(),
+                productPage.isLast(),
+                productPage.isFirst()
+        );
     }
 
     @Override

@@ -2,6 +2,7 @@ package com.diegoehg.onlinestore.controller;
 
 import com.diegoehg.onlinestore.dto.ProductDTO;
 import com.diegoehg.onlinestore.exception.ResourceNotFoundException;
+import com.diegoehg.onlinestore.model.PagedResponse;
 import com.diegoehg.onlinestore.model.ResponseStatus;
 import com.diegoehg.onlinestore.service.ProductService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -60,19 +61,67 @@ class ProductControllerTest {
     }
 
     @Test
-    void getAllProducts() throws Exception {
-        when(productService.getAllProducts()).thenReturn(productList);
+    void getAllProducts_defaultCase() throws Exception {
+        PagedResponse<ProductDTO> pagedResponse = new PagedResponse<>(
+                productList,
+                1,
+                10,
+                2,
+                1,
+                true,
+                true
+        );
+
+        when(productService.getProductsPaginated(1, 10)).thenReturn(pagedResponse);
 
         mockMvc.perform(get("/api/products"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.status", is(ResponseStatus.SUCCESS.toString())))
                 .andExpect(jsonPath("$.code", is(200)))
-                .andExpect(jsonPath("$.data", hasSize(2)))
-                .andExpect(jsonPath("$.data[0].id", is(1)))
-                .andExpect(jsonPath("$.data[0].title", is("Product 1")))
-                .andExpect(jsonPath("$.data[1].id", is(2)))
-                .andExpect(jsonPath("$.data[1].title", is("Product 2")));
+                .andExpect(jsonPath("$.data.content", hasSize(2)))
+                .andExpect(jsonPath("$.data.page", is(1)))
+                .andExpect(jsonPath("$.data.size", is(10)))
+                .andExpect(jsonPath("$.data.totalElements", is(2)))
+                .andExpect(jsonPath("$.data.totalPages", is(1)))
+                .andExpect(jsonPath("$.data.last", is(true)))
+                .andExpect(jsonPath("$.data.first", is(true)))
+                .andExpect(jsonPath("$.data.content[0].id", is(1)))
+                .andExpect(jsonPath("$.data.content[0].title", is("Product 1")))
+                .andExpect(jsonPath("$.data.content[1].id", is(2)))
+                .andExpect(jsonPath("$.data.content[1].title", is("Product 2")));
+    }
+    
+    @Test
+    void getAllProducts_getPageWithSize() throws Exception {
+        PagedResponse<ProductDTO> pagedResponse = new PagedResponse<>(
+            productList,
+            6,
+            10,
+            2,
+            1,
+            true,
+            true
+        );
+        
+        when(productService.getProductsPaginated(6, 10)).thenReturn(pagedResponse);
+
+        mockMvc.perform(get("/api/products?page=6&size=10"))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(jsonPath("$.status", is(ResponseStatus.SUCCESS.toString())))
+                .andExpect(jsonPath("$.code", is(200)))
+                .andExpect(jsonPath("$.data.content", hasSize(2)))
+                .andExpect(jsonPath("$.data.page", is(6)))
+                .andExpect(jsonPath("$.data.size", is(10)))
+                .andExpect(jsonPath("$.data.totalElements", is(2)))
+                .andExpect(jsonPath("$.data.totalPages", is(1)))
+                .andExpect(jsonPath("$.data.last", is(true)))
+                .andExpect(jsonPath("$.data.first", is(true)))
+                .andExpect(jsonPath("$.data.content[0].id", is(1)))
+                .andExpect(jsonPath("$.data.content[0].title", is("Product 1")))
+                .andExpect(jsonPath("$.data.content[1].id", is(2)))
+                .andExpect(jsonPath("$.data.content[1].title", is("Product 2")));
     }
 
     @Test

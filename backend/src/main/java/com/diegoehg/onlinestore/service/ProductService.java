@@ -2,6 +2,7 @@ package com.diegoehg.onlinestore.service;
 
 import com.diegoehg.onlinestore.dto.ProductDTO;
 import com.diegoehg.onlinestore.exception.ResourceNotFoundException;
+import com.diegoehg.onlinestore.model.PagedResponse;
 
 import java.util.List;
 
@@ -15,6 +16,14 @@ public interface ProductService {
      * @return List of all products as DTOs
      */
     List<ProductDTO> getAllProducts();
+    
+    /**
+     * Retrieves products with pagination
+     * @param page Page number (1-based)
+     * @param size Page size
+     * @return Paginated response with products
+     */
+    PagedResponse<ProductDTO> getProductsPaginated(int page, int size);
 
     /**
      * Retrieves a product by its ID
