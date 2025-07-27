@@ -1,0 +1,301 @@
+﻿product_title,description,price,seller_id,image_urls
+High-Performance Laptop,15.6-inch laptop with the latest processor 16GB RAM and 512GB SSD storage.,1299.99,1,https://example.com/images/laptop1.jpg;https://example.com/images/laptop2.jpg;https://example.com/images/laptop3.jpg
+Premium Smartphone,6.5-inch smartphone with 128GB storage 8GB RAM and a high-resolution camera.,899.99,1,https://example.com/images/phone1.jpg;https://example.com/images/phone2.jpg
+Designer Jeans,Premium quality jeans with a modern fit and durable fabric.,79.99,2,https://example.com/images/jeans1.jpg;https://example.com/images/jeans2.jpg
+Casual T-Shirt,Comfortable cotton t-shirt available in various colors.,24.99,2,https://example.com/images/tshirt1.jpg;https://example.com/images/tshirt2.jpg;https://example.com/images/tshirt3.jpg
+Modern Coffee Table,Elegant coffee table with a glass top and wooden legs.,249.99,3,https://example.com/images/table1.jpg;https://example.com/images/table2.jpg
+Luxury Bed Set,King-size bed set including mattress frame and headboard.,1499.99,3,https://example.com/images/bedset1.jpg;https://example.com/images/bedset2.jpg;https://example.com/images/bedset3.jpg
+4K Smart TV,55-inch 4K Ultra HD Smart TV with built-in streaming apps and voice control.,799.99,4,https://example.com/images/tv1.jpg;https://example.com/images/tv2.jpg
+Wireless Headphones,Noise-cancelling wireless headphones with 30-hour battery life.,199.99,4,https://example.com/images/headphones1.jpg;https://example.com/images/headphones2.jpg
+Hiking Backpack,Durable 40L hiking backpack with multiple compartments and rain cover.,89.99,5,https://example.com/images/backpack1.jpg;https://example.com/images/backpack2.jpg
+Camping Tent,4-person waterproof tent easy to set up and pack away.,149.99,5,https://example.com/images/tent1.jpg;https://example.com/images/tent2.jpg;https://example.com/images/tent3.jpg
+Professional Chef Knife,High-carbon stainless steel chef knife with ergonomic handle.,129.99,6,https://example.com/images/knife1.jpg;https://example.com/images/knife2.jpg
+Non-Stick Cookware Set,10-piece non-stick cookware set with glass lids.,199.99,6,https://example.com/images/cookware1.jpg;https://example.com/images/cookware2.jpg
+Vintage Vinyl Record,Original pressing of classic album in excellent condition.,49.99,7,https://example.com/images/vinyl1.jpg;https://example.com/images/vinyl2.jpg
+Antique Pocket Watch,19th century gold-plated pocket watch fully functional.,299.99,7,https://example.com/images/watch1.jpg;https://example.com/images/watch2.jpg;https://example.com/images/watch3.jpg
+Sectional Sofa,Modern L-shaped sectional sofa with chaise lounge.,899.99,8,https://example.com/images/sofa1.jpg;https://example.com/images/sofa2.jpg
+Dining Table Set,Solid wood dining table with six matching chairs.,699.99,8,https://example.com/images/dining1.jpg;https://example.com/images/dining2.jpg;https://example.com/images/dining3.jpg
+Organic Face Cream,All-natural face cream with anti-aging properties.,39.99,9,https://example.com/images/cream1.jpg;https://example.com/images/cream2.jpg
+Essential Oil Set,Set of 12 pure essential oils for aromatherapy.,59.99,9,https://example.com/images/oils1.jpg;https://example.com/images/oils2.jpg
+Building Blocks Set,Educational building blocks set with 500 pieces.,34.99,10,https://example.com/images/blocks1.jpg;https://example.com/images/blocks2.jpg
+Science Experiment Kit,Comprehensive science kit with 50 experiments for children.,49.99,10,https://example.com/images/science1.jpg;https://example.com/images/science2.jpg;https://example.com/images/science3.jpg
+Curtain Set Standard,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,142.58,8,https://example.com/images/store1_1.jpg
+Wireless Earbuds Premium,Professional-grade camera with 4K video recording capabilities. Perfect for everyday use.,63.16,1,https://example.com/images/store2_1.jpg;https://example.com/images/store2_2.jpg;https://example.com/images/store2_3.jpg
+Portable Charger Basic,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,171.67,1,https://example.com/images/item3_1.jpg;https://example.com/images/item3_2.jpg;https://example.com/images/item3_3.jpg
+Area Rug Elite,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,279.34,8,https://example.com/images/product4_1.jpg;https://example.com/images/product4_2.jpg;https://example.com/images/product4_3.jpg
+Running Shoes Basic,Genuine leather belt with a timeless design. Perfect for everyday use.,113.73,2,https://example.com/images/store5_1.jpg
+Gaming Console Plus,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,65.25,1,https://example.com/images/product6_1.jpg;https://example.com/images/product6_2.jpg;https://example.com/images/product6_3.jpg
+Mechanical Keyboard Standard,10-inch display with high resolution and fast processor. Perfect for everyday use.,159.58,4,https://example.com/images/store7_1.jpg;https://example.com/images/store7_2.jpg;https://example.com/images/store7_3.jpg
+Picture Frame Elite,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,137.68,3,https://example.com/images/product8_1.jpg
+Denim Jeans Standard,Genuine leather belt with a timeless design. Perfect for everyday use.,33.56,2,https://example.com/images/item9_1.jpg;https://example.com/images/item9_2.jpg;https://example.com/images/item9_3.jpg
+Area Rug Pro,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,213.95,3,https://example.com/images/product10_1.jpg;https://example.com/images/product10_2.jpg
+Wireless Mouse Deluxe,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,192.85,1,https://example.com/images/store11_1.jpg
+Summer Dress Premium,Soft and warm sweater made from premium materials. Perfect for everyday use.,54.09,2,https://example.com/images/product12_1.jpg;https://example.com/images/product12_2.jpg
+Smartwatch Premium,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,130.89,1,https://example.com/images/store13_1.jpg
+Hiking Boots Elite,Genuine leather belt with a timeless design. Perfect for everyday use.,20.76,2,https://example.com/images/product14_1.jpg;https://example.com/images/product14_2.jpg
+Summer Dress Plus,Waterproof and windproof jacket perfect for cold weather. Perfect for everyday use.,54.06,2,https://example.com/images/product15_1.jpg
+Bookshelf Basic,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,249.34,8,https://example.com/images/product16_1.jpg;https://example.com/images/product16_2.jpg;https://example.com/images/product16_3.jpg
+Ceramic Vase Standard,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,212.01,3,https://example.com/images/item17_1.jpg;https://example.com/images/item17_2.jpg;https://example.com/images/item17_3.jpg
+Candle Holder Premium,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,230.04,8,https://example.com/images/product18_1.jpg;https://example.com/images/product18_2.jpg
+Summer Dress Plus,Waterproof and windproof jacket perfect for cold weather. Perfect for everyday use.,198.08,2,https://example.com/images/store19_1.jpg
+Gaming Console Standard,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,130.84,1,https://example.com/images/item20_1.jpg;https://example.com/images/item20_2.jpg
+Bluetooth Speaker Ultra,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,270.39,1,https://example.com/images/product21_1.jpg;https://example.com/images/product21_2.jpg
+External Hard Drive Elite,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,195.12,1,https://example.com/images/product22_1.jpg;https://example.com/images/product22_2.jpg
+Wall Clock Premium,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,342.13,8,https://example.com/images/item23_1.jpg;https://example.com/images/item23_2.jpg
+Decorative Bowl Plus,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,233.37,3,https://example.com/images/item24_1.jpg;https://example.com/images/item24_2.jpg;https://example.com/images/item24_3.jpg
+Tablet Premium,Professional-grade camera with 4K video recording capabilities. Perfect for everyday use.,245.68,4,https://example.com/images/product25_1.jpg
+Digital Camera Pro,10-inch display with high resolution and fast processor. Perfect for everyday use.,90.98,4,https://example.com/images/item26_1.jpg
+Mechanical Keyboard Standard,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,258.08,1,https://example.com/images/product27_1.jpg
+Mechanical Keyboard Ultra,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,214.9,1,https://example.com/images/product28_1.jpg;https://example.com/images/product28_2.jpg;https://example.com/images/product28_3.jpg
+Digital Camera Premium,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,177.03,1,https://example.com/images/store29_1.jpg
+Smartwatch Pro,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,234.63,4,https://example.com/images/item30_1.jpg;https://example.com/images/item30_2.jpg;https://example.com/images/item30_3.jpg
+Picture Frame Ultra,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,189.58,8,https://example.com/images/product31_1.jpg;https://example.com/images/product31_2.jpg;https://example.com/images/product31_3.jpg
+Running Shoes Premium,Genuine leather belt with a timeless design. Perfect for everyday use.,48.81,2,https://example.com/images/store32_1.jpg
+Gaming Console Standard,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,282.02,4,https://example.com/images/store33_1.jpg;https://example.com/images/store33_2.jpg;https://example.com/images/store33_3.jpg
+External Hard Drive Deluxe,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,279.74,4,https://example.com/images/item34_1.jpg;https://example.com/images/item34_2.jpg;https://example.com/images/item34_3.jpg
+Curtain Set Elite,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,39.98,3,https://example.com/images/store35_1.jpg;https://example.com/images/store35_2.jpg;https://example.com/images/store35_3.jpg
+Curtain Set Pro,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,324.78,8,https://example.com/images/store36_1.jpg;https://example.com/images/store36_2.jpg
+External Hard Drive Max,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,200.51,4,https://example.com/images/store37_1.jpg;https://example.com/images/store37_2.jpg
+Candle Holder Plus,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,177.56,3,https://example.com/images/item38_1.jpg;https://example.com/images/item38_2.jpg
+Bookshelf Ultra,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,226.31,8,https://example.com/images/store39_1.jpg;https://example.com/images/store39_2.jpg
+Ceramic Vase Max,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,168.59,3,https://example.com/images/item40_1.jpg;https://example.com/images/item40_2.jpg;https://example.com/images/item40_3.jpg
+Ceramic Vase Ultra,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,303.41,3,https://example.com/images/item41_1.jpg
+Wireless Mouse Deluxe,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,133.33,1,https://example.com/images/product42_1.jpg;https://example.com/images/product42_2.jpg
+Mechanical Keyboard Pro,10-inch display with high resolution and fast processor. Perfect for everyday use.,201.56,4,https://example.com/images/item43_1.jpg;https://example.com/images/item43_2.jpg;https://example.com/images/item43_3.jpg
+Winter Jacket Plus,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,178.1,2,https://example.com/images/item44_1.jpg;https://example.com/images/item44_2.jpg;https://example.com/images/item44_3.jpg
+Mechanical Keyboard Standard,10-inch display with high resolution and fast processor. Perfect for everyday use.,148.72,1,https://example.com/images/product45_1.jpg;https://example.com/images/product45_2.jpg;https://example.com/images/product45_3.jpg
+Wool Sweater Premium,Soft and warm sweater made from premium materials. Perfect for everyday use.,136.5,2,https://example.com/images/item46_1.jpg;https://example.com/images/item46_2.jpg
+External Hard Drive Plus,Professional-grade camera with 4K video recording capabilities. Perfect for everyday use.,51.92,4,https://example.com/images/product47_1.jpg;https://example.com/images/product47_2.jpg
+Wireless Mouse Ultra,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,63.83,4,https://example.com/images/store48_1.jpg;https://example.com/images/store48_2.jpg
+Throw Pillow Plus,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,263.91,8,https://example.com/images/store49_1.jpg;https://example.com/images/store49_2.jpg;https://example.com/images/store49_3.jpg
+Wireless Mouse Elite,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,33.04,1,https://example.com/images/product50_1.jpg;https://example.com/images/product50_2.jpg
+Candle Holder Elite,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,111.27,3,https://example.com/images/store51_1.jpg
+Running Shoes Premium,Genuine leather belt with a timeless design. Perfect for everyday use.,64.41,2,https://example.com/images/store52_1.jpg;https://example.com/images/store52_2.jpg
+Throw Pillow Deluxe,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,250.17,3,https://example.com/images/item53_1.jpg
+Wool Sweater Premium,Genuine leather belt with a timeless design. Perfect for everyday use.,118.11,2,https://example.com/images/product54_1.jpg;https://example.com/images/product54_2.jpg;https://example.com/images/product54_3.jpg
+Summer Dress Max,Genuine leather belt with a timeless design. Perfect for everyday use.,151.04,2,https://example.com/images/store55_1.jpg
+External Hard Drive Basic,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,115.42,1,https://example.com/images/item56_1.jpg;https://example.com/images/item56_2.jpg
+Tablet Basic,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,193.61,4,https://example.com/images/product57_1.jpg;https://example.com/images/product57_2.jpg;https://example.com/images/product57_3.jpg
+Wireless Earbuds Elite,Professional-grade camera with 4K video recording capabilities. Perfect for everyday use.,293.61,4,https://example.com/images/store58_1.jpg
+Throw Pillow Premium,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,289.92,8,https://example.com/images/store59_1.jpg;https://example.com/images/store59_2.jpg
+Formal Suit Max,Genuine leather belt with a timeless design. Perfect for everyday use.,26.07,2,https://example.com/images/item60_1.jpg
+Summer Dress Pro,Soft and warm sweater made from premium materials. Perfect for everyday use.,119.84,2,https://example.com/images/store61_1.jpg
+External Hard Drive Plus,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,280.79,4,https://example.com/images/store62_1.jpg;https://example.com/images/store62_2.jpg;https://example.com/images/store62_3.jpg
+Wireless Earbuds Basic,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,79.17,4,https://example.com/images/product63_1.jpg;https://example.com/images/product63_2.jpg;https://example.com/images/product63_3.jpg
+Mechanical Keyboard Plus,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,63.01,1,https://example.com/images/item64_1.jpg;https://example.com/images/item64_2.jpg;https://example.com/images/item64_3.jpg
+Wireless Earbuds Max,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,228.19,1,https://example.com/images/item65_1.jpg
+Hiking Boots Pro,Genuine leather belt with a timeless design. Perfect for everyday use.,195.37,2,https://example.com/images/store66_1.jpg;https://example.com/images/store66_2.jpg
+Bluetooth Speaker Plus,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,294.72,1,https://example.com/images/product67_1.jpg;https://example.com/images/product67_2.jpg
+Mechanical Keyboard Plus,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,295.51,4,https://example.com/images/store68_1.jpg;https://example.com/images/store68_2.jpg;https://example.com/images/store68_3.jpg
+Picture Frame Standard,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,118.57,3,https://example.com/images/product69_1.jpg
+Mechanical Keyboard Elite,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,291.62,4,https://example.com/images/store70_1.jpg;https://example.com/images/store70_2.jpg
+Decorative Bowl Ultra,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,320.07,3,https://example.com/images/store71_1.jpg
+Mechanical Keyboard Plus,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,262.1,4,https://example.com/images/store72_1.jpg
+Ceramic Vase Pro,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,153.29,8,https://example.com/images/product73_1.jpg
+Winter Jacket Premium,Classic fit with wrinkle-resistant fabric for a professional look. Perfect for everyday use.,64.39,2,https://example.com/images/item74_1.jpg;https://example.com/images/item74_2.jpg
+Picture Frame Ultra,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,40.86,3,https://example.com/images/item75_1.jpg;https://example.com/images/item75_2.jpg
+Running Shoes Max,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,75.83,2,https://example.com/images/item76_1.jpg
+Wireless Mouse Elite,Professional-grade camera with 4K video recording capabilities. Perfect for everyday use.,236.14,4,https://example.com/images/store77_1.jpg;https://example.com/images/store77_2.jpg;https://example.com/images/store77_3.jpg
+Smartwatch Elite,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,118.3,4,https://example.com/images/product78_1.jpg;https://example.com/images/product78_2.jpg;https://example.com/images/product78_3.jpg
+Wall Clock Ultra,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,41.82,8,https://example.com/images/product79_1.jpg;https://example.com/images/product79_2.jpg;https://example.com/images/product79_3.jpg
+Bookshelf Max,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,58.49,3,https://example.com/images/item80_1.jpg;https://example.com/images/item80_2.jpg
+Running Shoes Plus,Genuine leather belt with a timeless design. Perfect for everyday use.,151.41,2,https://example.com/images/product81_1.jpg
+Athletic Shorts Plus,Classic fit with wrinkle-resistant fabric for a professional look. Perfect for everyday use.,145.67,2,https://example.com/images/product82_1.jpg
+Table Lamp Elite,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,90.06,3,https://example.com/images/item83_1.jpg
+Ceramic Vase Deluxe,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,175.86,8,https://example.com/images/product84_1.jpg
+Picture Frame Basic,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,291.46,3,https://example.com/images/product85_1.jpg;https://example.com/images/product85_2.jpg
+Curtain Set Ultra,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,183.71,8,https://example.com/images/store86_1.jpg;https://example.com/images/store86_2.jpg;https://example.com/images/store86_3.jpg
+Mechanical Keyboard Standard,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,200.81,4,https://example.com/images/store87_1.jpg;https://example.com/images/store87_2.jpg
+Wireless Mouse Standard,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,289.05,1,https://example.com/images/store88_1.jpg;https://example.com/images/store88_2.jpg;https://example.com/images/store88_3.jpg
+Digital Camera Deluxe,10-inch display with high resolution and fast processor. Perfect for everyday use.,197.42,4,https://example.com/images/product89_1.jpg;https://example.com/images/product89_2.jpg
+Picture Frame Premium,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,303.1,3,https://example.com/images/product90_1.jpg;https://example.com/images/product90_2.jpg
+Winter Jacket Elite,Waterproof and windproof jacket perfect for cold weather. Perfect for everyday use.,99.24,2,https://example.com/images/store91_1.jpg
+Smartwatch Pro,10-inch display with high resolution and fast processor. Perfect for everyday use.,164.86,4,https://example.com/images/product92_1.jpg
+Hiking Boots Plus,Soft and warm sweater made from premium materials. Perfect for everyday use.,76.44,2,https://example.com/images/store93_1.jpg;https://example.com/images/store93_2.jpg;https://example.com/images/store93_3.jpg
+Smartwatch Max,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,195.72,4,https://example.com/images/store94_1.jpg;https://example.com/images/store94_2.jpg;https://example.com/images/store94_3.jpg
+Table Lamp Deluxe,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,272.06,3,https://example.com/images/product95_1.jpg;https://example.com/images/product95_2.jpg;https://example.com/images/product95_3.jpg
+Area Rug Ultra,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,95.05,3,https://example.com/images/item96_1.jpg
+Winter Jacket Ultra,Genuine leather belt with a timeless design. Perfect for everyday use.,161.15,2,https://example.com/images/store97_1.jpg
+Curtain Set Plus,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,263.1,3,https://example.com/images/item98_1.jpg;https://example.com/images/item98_2.jpg;https://example.com/images/item98_3.jpg
+Tablet Plus,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,151.24,1,https://example.com/images/store99_1.jpg;https://example.com/images/store99_2.jpg
+Leather Belt Ultra,Waterproof and windproof jacket perfect for cold weather. Perfect for everyday use.,160.98,2,https://example.com/images/product100_1.jpg;https://example.com/images/product100_2.jpg
+Formal Suit Plus,Classic fit with wrinkle-resistant fabric for a professional look. Perfect for everyday use.,185.52,2,https://example.com/images/item101_1.jpg
+Wool Sweater Elite,Classic fit with wrinkle-resistant fabric for a professional look. Perfect for everyday use.,175.5,2,https://example.com/images/product102_1.jpg;https://example.com/images/product102_2.jpg
+External Hard Drive Max,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,229.1,1,https://example.com/images/product103_1.jpg;https://example.com/images/product103_2.jpg
+Area Rug Premium,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,202.89,8,https://example.com/images/product104_1.jpg;https://example.com/images/product104_2.jpg
+Ceramic Vase Basic,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,346.05,3,https://example.com/images/product105_1.jpg
+Leather Belt Ultra,Soft and warm sweater made from premium materials. Perfect for everyday use.,173.12,2,https://example.com/images/product106_1.jpg
+Athletic Shorts Elite,Waterproof and windproof jacket perfect for cold weather. Perfect for everyday use.,175.93,2,https://example.com/images/store107_1.jpg
+Mechanical Keyboard Standard,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,232.49,1,https://example.com/images/product108_1.jpg;https://example.com/images/product108_2.jpg
+Denim Jeans Premium,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,182.8,2,https://example.com/images/store109_1.jpg;https://example.com/images/store109_2.jpg;https://example.com/images/store109_3.jpg
+Winter Jacket Plus,Genuine leather belt with a timeless design. Perfect for everyday use.,78.91,2,https://example.com/images/product110_1.jpg
+Gaming Console Premium,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,244.62,4,https://example.com/images/store111_1.jpg;https://example.com/images/store111_2.jpg
+Mechanical Keyboard Ultra,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,98.88,1,https://example.com/images/product112_1.jpg;https://example.com/images/product112_2.jpg
+Portable Charger Max,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,169.88,1,https://example.com/images/product113_1.jpg;https://example.com/images/product113_2.jpg;https://example.com/images/product113_3.jpg
+Throw Pillow Deluxe,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,24.23,3,https://example.com/images/store114_1.jpg;https://example.com/images/store114_2.jpg;https://example.com/images/store114_3.jpg
+Area Rug Basic,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,95.58,3,https://example.com/images/product115_1.jpg;https://example.com/images/product115_2.jpg;https://example.com/images/product115_3.jpg
+Leather Belt Pro,Classic fit with wrinkle-resistant fabric for a professional look. Perfect for everyday use.,150.17,2,https://example.com/images/product116_1.jpg
+Table Lamp Plus,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,237.85,8,https://example.com/images/store117_1.jpg;https://example.com/images/store117_2.jpg;https://example.com/images/store117_3.jpg
+Throw Pillow Ultra,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,231.55,8,https://example.com/images/item118_1.jpg;https://example.com/images/item118_2.jpg;https://example.com/images/item118_3.jpg
+Summer Dress Plus,Soft and warm sweater made from premium materials. Perfect for everyday use.,143.87,2,https://example.com/images/item119_1.jpg
+Wireless Mouse Premium,Professional-grade camera with 4K video recording capabilities. Perfect for everyday use.,192.36,4,https://example.com/images/item120_1.jpg;https://example.com/images/item120_2.jpg
+Curtain Set Ultra,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,85.97,3,https://example.com/images/product121_1.jpg
+Candle Holder Pro,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,28.38,8,https://example.com/images/store122_1.jpg
+Candle Holder Basic,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,164.56,3,https://example.com/images/product123_1.jpg
+Ceramic Vase Standard,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,348.89,8,https://example.com/images/item124_1.jpg;https://example.com/images/item124_2.jpg
+Running Shoes Standard,Genuine leather belt with a timeless design. Perfect for everyday use.,94.88,2,https://example.com/images/item125_1.jpg;https://example.com/images/item125_2.jpg
+Formal Suit Standard,Classic fit with wrinkle-resistant fabric for a professional look. Perfect for everyday use.,193.03,2,https://example.com/images/item126_1.jpg;https://example.com/images/item126_2.jpg;https://example.com/images/item126_3.jpg
+Denim Jeans Premium,Soft and warm sweater made from premium materials. Perfect for everyday use.,98.3,2,https://example.com/images/product127_1.jpg
+Decorative Bowl Elite,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,109.21,8,https://example.com/images/store128_1.jpg;https://example.com/images/store128_2.jpg
+Running Shoes Basic,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,162.8,2,https://example.com/images/product129_1.jpg
+Athletic Shorts Pro,Soft and warm sweater made from premium materials. Perfect for everyday use.,99.59,2,https://example.com/images/item130_1.jpg;https://example.com/images/item130_2.jpg
+Wool Sweater Plus,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,56.48,2,https://example.com/images/item131_1.jpg;https://example.com/images/item131_2.jpg;https://example.com/images/item131_3.jpg
+Table Lamp Premium,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,99.33,3,https://example.com/images/product132_1.jpg;https://example.com/images/product132_2.jpg;https://example.com/images/product132_3.jpg
+External Hard Drive Ultra,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,292.42,1,https://example.com/images/item133_1.jpg;https://example.com/images/item133_2.jpg
+Summer Dress Basic,Genuine leather belt with a timeless design. Perfect for everyday use.,115.83,2,https://example.com/images/product134_1.jpg;https://example.com/images/product134_2.jpg
+Candle Holder Ultra,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,71,3,https://example.com/images/item135_1.jpg
+Area Rug Ultra,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,320.07,3,https://example.com/images/store136_1.jpg;https://example.com/images/store136_2.jpg
+Running Shoes Plus,Waterproof and windproof jacket perfect for cold weather. Perfect for everyday use.,126.87,2,https://example.com/images/product137_1.jpg;https://example.com/images/product137_2.jpg;https://example.com/images/product137_3.jpg
+Tablet Deluxe,Professional-grade camera with 4K video recording capabilities. Perfect for everyday use.,105.94,1,https://example.com/images/item138_1.jpg;https://example.com/images/item138_2.jpg;https://example.com/images/item138_3.jpg
+Athletic Shorts Standard,Soft and warm sweater made from premium materials. Perfect for everyday use.,155.76,2,https://example.com/images/store139_1.jpg;https://example.com/images/store139_2.jpg
+Picture Frame Standard,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,87.95,3,https://example.com/images/store140_1.jpg;https://example.com/images/store140_2.jpg
+Bluetooth Speaker Plus,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,32.25,1,https://example.com/images/product141_1.jpg
+Winter Jacket Premium,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,87.3,2,https://example.com/images/store142_1.jpg
+Smartwatch Elite,10-inch display with high resolution and fast processor. Perfect for everyday use.,227.78,1,https://example.com/images/store143_1.jpg;https://example.com/images/store143_2.jpg
+Wireless Earbuds Basic,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,247.71,1,https://example.com/images/product144_1.jpg;https://example.com/images/product144_2.jpg
+Gaming Console Max,10-inch display with high resolution and fast processor. Perfect for everyday use.,122.79,4,https://example.com/images/item145_1.jpg
+Dress Shirt Plus,Soft and warm sweater made from premium materials. Perfect for everyday use.,54.85,2,https://example.com/images/item146_1.jpg;https://example.com/images/item146_2.jpg
+Wireless Earbuds Ultra,Professional-grade camera with 4K video recording capabilities. Perfect for everyday use.,123.14,4,https://example.com/images/product147_1.jpg;https://example.com/images/product147_2.jpg
+Mechanical Keyboard Standard,10-inch display with high resolution and fast processor. Perfect for everyday use.,110.82,4,https://example.com/images/item148_1.jpg;https://example.com/images/item148_2.jpg;https://example.com/images/item148_3.jpg
+Tablet Basic,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,158.82,1,https://example.com/images/item149_1.jpg;https://example.com/images/item149_2.jpg
+Wall Clock Elite,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,279.7,3,https://example.com/images/store150_1.jpg;https://example.com/images/store150_2.jpg;https://example.com/images/store150_3.jpg
+Portable Charger Ultra,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,159.96,4,https://example.com/images/product151_1.jpg;https://example.com/images/product151_2.jpg;https://example.com/images/product151_3.jpg
+Ceramic Vase Standard,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,53.78,8,https://example.com/images/store152_1.jpg;https://example.com/images/store152_2.jpg
+Tablet Plus,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,252.53,4,https://example.com/images/product153_1.jpg;https://example.com/images/product153_2.jpg;https://example.com/images/product153_3.jpg
+Dress Shirt Basic,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,177.84,2,https://example.com/images/product154_1.jpg;https://example.com/images/product154_2.jpg
+Smartwatch Plus,10-inch display with high resolution and fast processor. Perfect for everyday use.,128.32,1,https://example.com/images/product155_1.jpg;https://example.com/images/product155_2.jpg
+Bookshelf Premium,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,31.83,8,https://example.com/images/item156_1.jpg;https://example.com/images/item156_2.jpg;https://example.com/images/item156_3.jpg
+Wall Clock Basic,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,183.87,3,https://example.com/images/product157_1.jpg;https://example.com/images/product157_2.jpg;https://example.com/images/product157_3.jpg
+Formal Suit Standard,Classic fit with wrinkle-resistant fabric for a professional look. Perfect for everyday use.,178.11,2,https://example.com/images/product158_1.jpg
+Ceramic Vase Premium,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,231.49,8,https://example.com/images/item159_1.jpg;https://example.com/images/item159_2.jpg
+Decorative Bowl Elite,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,194.03,3,https://example.com/images/item160_1.jpg;https://example.com/images/item160_2.jpg;https://example.com/images/item160_3.jpg
+Table Lamp Basic,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,264.68,3,https://example.com/images/product161_1.jpg;https://example.com/images/product161_2.jpg;https://example.com/images/product161_3.jpg
+Bluetooth Speaker Deluxe,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,36.51,4,https://example.com/images/store162_1.jpg;https://example.com/images/store162_2.jpg;https://example.com/images/store162_3.jpg
+Dress Shirt Standard,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,131.94,2,https://example.com/images/product163_1.jpg
+Dress Shirt Max,Genuine leather belt with a timeless design. Perfect for everyday use.,79.91,2,https://example.com/images/product164_1.jpg;https://example.com/images/product164_2.jpg;https://example.com/images/product164_3.jpg
+Formal Suit Plus,Classic fit with wrinkle-resistant fabric for a professional look. Perfect for everyday use.,153.06,2,https://example.com/images/product165_1.jpg;https://example.com/images/product165_2.jpg
+Throw Pillow Ultra,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,274.94,3,https://example.com/images/product166_1.jpg;https://example.com/images/product166_2.jpg
+Throw Pillow Ultra,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,208.26,3,https://example.com/images/item167_1.jpg;https://example.com/images/item167_2.jpg
+Leather Belt Pro,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,20.24,2,https://example.com/images/item168_1.jpg;https://example.com/images/item168_2.jpg
+Wireless Mouse Max,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,180.45,4,https://example.com/images/product169_1.jpg
+Table Lamp Ultra,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,271.88,3,https://example.com/images/product170_1.jpg;https://example.com/images/product170_2.jpg
+Wall Clock Basic,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,336.1,3,https://example.com/images/item171_1.jpg;https://example.com/images/item171_2.jpg;https://example.com/images/item171_3.jpg
+Mechanical Keyboard Ultra,10-inch display with high resolution and fast processor. Perfect for everyday use.,223.1,1,https://example.com/images/item172_1.jpg;https://example.com/images/item172_2.jpg
+Gaming Console Standard,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,188.83,1,https://example.com/images/product173_1.jpg;https://example.com/images/product173_2.jpg
+Gaming Console Deluxe,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,193.92,4,https://example.com/images/item174_1.jpg
+Leather Belt Max,Genuine leather belt with a timeless design. Perfect for everyday use.,43.16,2,https://example.com/images/product175_1.jpg;https://example.com/images/product175_2.jpg
+Mechanical Keyboard Max,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,263.05,1,https://example.com/images/product176_1.jpg
+Gaming Console Elite,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,284.81,4,https://example.com/images/store177_1.jpg
+Wireless Mouse Premium,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,282.83,4,https://example.com/images/store178_1.jpg;https://example.com/images/store178_2.jpg
+Running Shoes Basic,Genuine leather belt with a timeless design. Perfect for everyday use.,58.85,2,https://example.com/images/product179_1.jpg
+Tablet Elite,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,67.24,4,https://example.com/images/product180_1.jpg
+Area Rug Premium,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,177.74,3,https://example.com/images/product181_1.jpg
+Mechanical Keyboard Ultra,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,234.58,4,https://example.com/images/product182_1.jpg;https://example.com/images/product182_2.jpg
+Summer Dress Premium,Genuine leather belt with a timeless design. Perfect for everyday use.,126.09,2,https://example.com/images/product183_1.jpg
+Portable Charger Deluxe,10-inch display with high resolution and fast processor. Perfect for everyday use.,280.52,4,https://example.com/images/item184_1.jpg;https://example.com/images/item184_2.jpg
+Wireless Earbuds Ultra,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,162.74,1,https://example.com/images/item185_1.jpg;https://example.com/images/item185_2.jpg;https://example.com/images/item185_3.jpg
+Running Shoes Basic,Waterproof and windproof jacket perfect for cold weather. Perfect for everyday use.,92.84,2,https://example.com/images/product186_1.jpg
+Wireless Mouse Standard,Professional-grade camera with 4K video recording capabilities. Perfect for everyday use.,218.05,4,https://example.com/images/store187_1.jpg;https://example.com/images/store187_2.jpg
+Wool Sweater Elite,Genuine leather belt with a timeless design. Perfect for everyday use.,38.88,2,https://example.com/images/item188_1.jpg;https://example.com/images/item188_2.jpg;https://example.com/images/item188_3.jpg
+Portable Charger Deluxe,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,72.64,1,https://example.com/images/item189_1.jpg;https://example.com/images/item189_2.jpg;https://example.com/images/item189_3.jpg
+Wireless Earbuds Ultra,10-inch display with high resolution and fast processor. Perfect for everyday use.,245.31,1,https://example.com/images/item190_1.jpg;https://example.com/images/item190_2.jpg
+Curtain Set Deluxe,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,292.19,3,https://example.com/images/store191_1.jpg;https://example.com/images/store191_2.jpg
+Smartwatch Elite,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,126.45,4,https://example.com/images/store192_1.jpg
+Gaming Console Pro,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,298.9,4,https://example.com/images/item193_1.jpg
+Mechanical Keyboard Deluxe,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,238.13,4,https://example.com/images/item194_1.jpg
+External Hard Drive Standard,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,221.89,1,https://example.com/images/product195_1.jpg;https://example.com/images/product195_2.jpg
+Candle Holder Standard,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,290.04,3,https://example.com/images/product196_1.jpg;https://example.com/images/product196_2.jpg;https://example.com/images/product196_3.jpg
+Bookshelf Standard,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,87.99,3,https://example.com/images/store197_1.jpg;https://example.com/images/store197_2.jpg;https://example.com/images/store197_3.jpg
+Winter Jacket Elite,Soft and warm sweater made from premium materials. Perfect for everyday use.,193.54,2,https://example.com/images/store198_1.jpg
+Decorative Bowl Elite,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,129.12,3,https://example.com/images/product199_1.jpg;https://example.com/images/product199_2.jpg;https://example.com/images/product199_3.jpg
+Athletic Shorts Max,Soft and warm sweater made from premium materials. Perfect for everyday use.,45.12,2,https://example.com/images/item200_1.jpg;https://example.com/images/item200_2.jpg;https://example.com/images/item200_3.jpg
+Digital Camera Standard,10-inch display with high resolution and fast processor. Perfect for everyday use.,206.59,4,https://example.com/images/item201_1.jpg
+Bluetooth Speaker Standard,10-inch display with high resolution and fast processor. Perfect for everyday use.,173.51,1,https://example.com/images/product202_1.jpg
+Curtain Set Basic,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,65.72,3,https://example.com/images/product203_1.jpg;https://example.com/images/product203_2.jpg;https://example.com/images/product203_3.jpg
+Formal Suit Deluxe,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,110.35,2,https://example.com/images/product204_1.jpg;https://example.com/images/product204_2.jpg
+Wall Clock Pro,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,69.63,8,https://example.com/images/product205_1.jpg;https://example.com/images/product205_2.jpg
+Curtain Set Premium,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,93.7,8,https://example.com/images/store206_1.jpg;https://example.com/images/store206_2.jpg;https://example.com/images/store206_3.jpg
+Area Rug Standard,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,195.18,8,https://example.com/images/item207_1.jpg;https://example.com/images/item207_2.jpg;https://example.com/images/item207_3.jpg
+Winter Jacket Premium,Waterproof and windproof jacket perfect for cold weather. Perfect for everyday use.,158.41,2,https://example.com/images/store208_1.jpg;https://example.com/images/store208_2.jpg;https://example.com/images/store208_3.jpg
+Wool Sweater Pro,Classic fit with wrinkle-resistant fabric for a professional look. Perfect for everyday use.,64.39,2,https://example.com/images/item209_1.jpg;https://example.com/images/item209_2.jpg;https://example.com/images/item209_3.jpg
+Candle Holder Ultra,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,241.2,8,https://example.com/images/product210_1.jpg;https://example.com/images/product210_2.jpg
+External Hard Drive Basic,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,143.88,1,https://example.com/images/product211_1.jpg;https://example.com/images/product211_2.jpg
+Mechanical Keyboard Premium,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,267.35,4,https://example.com/images/store212_1.jpg;https://example.com/images/store212_2.jpg
+Area Rug Deluxe,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,110.5,8,https://example.com/images/product213_1.jpg
+Area Rug Max,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,194.73,3,https://example.com/images/product214_1.jpg;https://example.com/images/product214_2.jpg;https://example.com/images/product214_3.jpg
+Decorative Bowl Ultra,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,152.01,3,https://example.com/images/store215_1.jpg
+Area Rug Standard,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,349.67,3,https://example.com/images/product216_1.jpg
+Wool Sweater Ultra,Genuine leather belt with a timeless design. Perfect for everyday use.,131.78,2,https://example.com/images/store217_1.jpg;https://example.com/images/store217_2.jpg;https://example.com/images/store217_3.jpg
+Mechanical Keyboard Max,10-inch display with high resolution and fast processor. Perfect for everyday use.,80.75,4,https://example.com/images/product218_1.jpg
+Wall Clock Plus,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,142.81,3,https://example.com/images/item219_1.jpg
+Dress Shirt Pro,Classic fit with wrinkle-resistant fabric for a professional look. Perfect for everyday use.,67.05,2,https://example.com/images/store220_1.jpg;https://example.com/images/store220_2.jpg
+Leather Belt Elite,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,105,2,https://example.com/images/item221_1.jpg;https://example.com/images/item221_2.jpg;https://example.com/images/item221_3.jpg
+Bookshelf Ultra,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,62.09,3,https://example.com/images/product222_1.jpg;https://example.com/images/product222_2.jpg;https://example.com/images/product222_3.jpg
+Candle Holder Ultra,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,252.65,8,https://example.com/images/store223_1.jpg;https://example.com/images/store223_2.jpg
+Hiking Boots Pro,Soft and warm sweater made from premium materials. Perfect for everyday use.,53.8,2,https://example.com/images/item224_1.jpg;https://example.com/images/item224_2.jpg
+Wireless Earbuds Max,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,82.99,4,https://example.com/images/product225_1.jpg;https://example.com/images/product225_2.jpg;https://example.com/images/product225_3.jpg
+Ceramic Vase Elite,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,209.13,8,https://example.com/images/product226_1.jpg;https://example.com/images/product226_2.jpg;https://example.com/images/product226_3.jpg
+Running Shoes Standard,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,104.31,2,https://example.com/images/store227_1.jpg;https://example.com/images/store227_2.jpg
+Wireless Mouse Premium,Fitness tracker with heart rate monitor and sleep tracking. Perfect for everyday use.,290.33,1,https://example.com/images/store228_1.jpg;https://example.com/images/store228_2.jpg;https://example.com/images/store228_3.jpg
+Formal Suit Basic,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,112.29,2,https://example.com/images/store229_1.jpg
+Digital Camera Basic,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,142.37,4,https://example.com/images/product230_1.jpg;https://example.com/images/product230_2.jpg
+Ceramic Vase Pro,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,310.54,8,https://example.com/images/product231_1.jpg;https://example.com/images/product231_2.jpg;https://example.com/images/product231_3.jpg
+Leather Belt Ultra,Waterproof and windproof jacket perfect for cold weather. Perfect for everyday use.,181.42,2,https://example.com/images/item232_1.jpg;https://example.com/images/item232_2.jpg;https://example.com/images/item232_3.jpg
+Table Lamp Premium,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,220.21,8,https://example.com/images/item233_1.jpg;https://example.com/images/item233_2.jpg
+Leather Belt Elite,Waterproof and windproof jacket perfect for cold weather. Perfect for everyday use.,96.48,2,https://example.com/images/item234_1.jpg;https://example.com/images/item234_2.jpg
+Picture Frame Deluxe,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,22.11,3,https://example.com/images/product235_1.jpg;https://example.com/images/product235_2.jpg;https://example.com/images/product235_3.jpg
+Throw Pillow Premium,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,259.9,3,https://example.com/images/store236_1.jpg;https://example.com/images/store236_2.jpg
+Throw Pillow Elite,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,17.92,8,https://example.com/images/item237_1.jpg;https://example.com/images/item237_2.jpg
+Bookshelf Plus,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,98.73,3,https://example.com/images/product238_1.jpg;https://example.com/images/product238_2.jpg
+Digital Camera Pro,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,136.34,4,https://example.com/images/product239_1.jpg
+Wall Clock Max,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,324.82,3,https://example.com/images/store240_1.jpg;https://example.com/images/store240_2.jpg
+Formal Suit Pro,Soft and warm sweater made from premium materials. Perfect for everyday use.,34.37,2,https://example.com/images/item241_1.jpg;https://example.com/images/item241_2.jpg
+Hiking Boots Basic,Classic fit with wrinkle-resistant fabric for a professional look. Perfect for everyday use.,95.28,2,https://example.com/images/store242_1.jpg
+Area Rug Plus,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,28.93,3,https://example.com/images/item243_1.jpg;https://example.com/images/item243_2.jpg
+Smartwatch Standard,Professional-grade camera with 4K video recording capabilities. Perfect for everyday use.,130.42,4,https://example.com/images/product244_1.jpg;https://example.com/images/product244_2.jpg
+Picture Frame Deluxe,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,116.38,8,https://example.com/images/product245_1.jpg;https://example.com/images/product245_2.jpg
+Area Rug Deluxe,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,180.35,8,https://example.com/images/item246_1.jpg;https://example.com/images/item246_2.jpg;https://example.com/images/item246_3.jpg
+Athletic Shorts Elite,Soft and warm sweater made from premium materials. Perfect for everyday use.,194.98,2,https://example.com/images/store247_1.jpg
+Winter Jacket Ultra,Soft and warm sweater made from premium materials. Perfect for everyday use.,47.62,2,https://example.com/images/product248_1.jpg
+Smartwatch Standard,10-inch display with high resolution and fast processor. Perfect for everyday use.,112.69,1,https://example.com/images/item249_1.jpg;https://example.com/images/item249_2.jpg;https://example.com/images/item249_3.jpg
+Wall Clock Ultra,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,64.73,8,https://example.com/images/store250_1.jpg
+Running Shoes Plus,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,84.34,2,https://example.com/images/store251_1.jpg
+Table Lamp Basic,Modern wall clock with silent movement and elegant design. Perfect for everyday use.,138.48,3,https://example.com/images/product252_1.jpg;https://example.com/images/product252_2.jpg
+Table Lamp Pro,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,158.81,8,https://example.com/images/item253_1.jpg;https://example.com/images/item253_2.jpg;https://example.com/images/item253_3.jpg
+Bluetooth Speaker Standard,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,280.93,4,https://example.com/images/product254_1.jpg
+Running Shoes Standard,Genuine leather belt with a timeless design. Perfect for everyday use.,186.55,2,https://example.com/images/product255_1.jpg;https://example.com/images/product255_2.jpg;https://example.com/images/product255_3.jpg
+Dress Shirt Deluxe,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,35.67,2,https://example.com/images/store256_1.jpg;https://example.com/images/store256_2.jpg;https://example.com/images/store256_3.jpg
+Candle Holder Ultra,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,40.36,3,https://example.com/images/item257_1.jpg
+Picture Frame Deluxe,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,189.33,3,https://example.com/images/product258_1.jpg
+Wireless Mouse Deluxe,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,192.93,4,https://example.com/images/product259_1.jpg;https://example.com/images/product259_2.jpg
+Candle Holder Basic,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,330.53,8,https://example.com/images/store260_1.jpg;https://example.com/images/store260_2.jpg
+Winter Jacket Basic,Soft and warm sweater made from premium materials. Perfect for everyday use.,104.7,2,https://example.com/images/item261_1.jpg
+Portable Charger Basic,Professional-grade camera with 4K video recording capabilities. Perfect for everyday use.,36.23,1,https://example.com/images/store262_1.jpg;https://example.com/images/store262_2.jpg
+Tablet Premium,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,159.82,1,https://example.com/images/item263_1.jpg;https://example.com/images/item263_2.jpg
+Formal Suit Pro,Genuine leather belt with a timeless design. Perfect for everyday use.,185.24,2,https://example.com/images/item264_1.jpg;https://example.com/images/item264_2.jpg;https://example.com/images/item264_3.jpg
+Athletic Shorts Standard,Waterproof and windproof jacket perfect for cold weather. Perfect for everyday use.,62.71,2,https://example.com/images/product265_1.jpg;https://example.com/images/product265_2.jpg;https://example.com/images/product265_3.jpg
+Mechanical Keyboard Elite,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,41.3,4,https://example.com/images/product266_1.jpg;https://example.com/images/product266_2.jpg;https://example.com/images/product266_3.jpg
+Picture Frame Pro,Adjustable lamp with energy-efficient LED bulb. Perfect for everyday use.,298.38,8,https://example.com/images/store267_1.jpg
+Picture Frame Deluxe,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,106.31,8,https://example.com/images/product268_1.jpg
+Picture Frame Pro,Durable and stain-resistant rug perfect for high-traffic areas. Perfect for everyday use.,63.91,8,https://example.com/images/store269_1.jpg;https://example.com/images/store269_2.jpg
+Candle Holder Elite,Soft and comfortable pillow with removable cover for easy cleaning. Perfect for everyday use.,307.58,3,https://example.com/images/store270_1.jpg;https://example.com/images/store270_2.jpg;https://example.com/images/store270_3.jpg
+Running Shoes Elite,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,169.77,2,https://example.com/images/store271_1.jpg
+Mechanical Keyboard Elite,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,141.69,1,https://example.com/images/store272_1.jpg
+Dress Shirt Deluxe,Lightweight and breathable shoes for maximum comfort. Perfect for everyday use.,164.68,2,https://example.com/images/store273_1.jpg;https://example.com/images/store273_2.jpg
+Formal Suit Basic,Waterproof and windproof jacket perfect for cold weather. Perfect for everyday use.,104.86,2,https://example.com/images/store274_1.jpg;https://example.com/images/store274_2.jpg
+Smartwatch Max,High-quality sound with noise cancellation and long battery life. Perfect for everyday use.,242.79,4,https://example.com/images/store275_1.jpg;https://example.com/images/store275_2.jpg;https://example.com/images/store275_3.jpg
+External Hard Drive Max,Waterproof speaker with 360-degree sound and 20-hour battery life. Perfect for everyday use.,44.35,4,https://example.com/images/product276_1.jpg
+Curtain Set Ultra,Handcrafted ceramic vase with a unique design. Perfect for everyday use.,321.68,3,https://example.com/images/store277_1.jpg;https://example.com/images/store277_2.jpg
+Tablet Max,Professional-grade camera with 4K video recording capabilities. Perfect for everyday use.,128.69,1,https://example.com/images/store278_1.jpg;https://example.com/images/store278_2.jpg;https://example.com/images/store278_3.jpg
+Tablet Premium,10-inch display with high resolution and fast processor. Perfect for everyday use.,264,4,https://example.com/images/item279_1.jpg
+Digital Camera Standard,Professional-grade camera with 4K video recording capabilities. Perfect for everyday use.,172.74,4,https://example.com/images/product280_1.jpg
