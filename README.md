@@ -21,6 +21,28 @@ and a final stage. I added a `docker-compose.yml` file at the root, for running 
 whole application with Docker Compose. I feel that this is a practical way to build the
 app and run the app.
 
+## Design Choices
+
+### Persistence
+I opted for having 3 entities: Product, Seller and Payment Methods. Products are the main entity
+that corresponds to an Item data: price, name, description, etc. Seller entity corresponds to
+the store data, although in this app it only has a name. Payment Method is related with the
+different methods available to pay for an item, like cash, credit card, some service like PayPal,
+etc.
+
+There is a one-to-many relationship between a Product and a Seller; a product is only
+sold by one seller, but a seller can sell many different products. This is necessary if
+I want to add a store view from where to buy different products from the same seller.
+There is a many-to-many relationship between Sellers and Payment Methods. In case I
+want to implement common logic related with a payment method, this can be reused across
+sellers that accept that payment method.
+
+There are 4 tables that persist this data: `products`, `sellers`, `products_images`,
+`payment_methods` and `seller_payment_methods`. The `seller_payment_methods` is a pivot
+table that associates different Sellers with different Payment Methods.
+`products_images` contains URLs of a product's pictures. I feel that it is more
+flexible to save the images' URLs in its own table.
+
 ## Backend API Description
 
 This section describes the API endpoints available in the backend.
