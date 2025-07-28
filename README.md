@@ -53,6 +53,12 @@ which information to pass through the API. Besides that, it decouples an entity
 structure from a response structure. I put the entity-to-DTO conversion logic inside
 a mapper. This mapper is invoked from the service layer.
 
+In the product service layer I added a validation for checking if an ID corresponds to
+an existing product. I case there is no product a custom exception is thrown. The
+purpose is to unify the logic that returns a 404 error when invoking handlers that
+require to get, modify or delete an specific element. A GlobalException handler is used
+for this purpose.
+
 ## Backend API Description
 
 This section describes the API endpoints available in the backend.
