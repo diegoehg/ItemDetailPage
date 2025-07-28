@@ -21,19 +21,19 @@ and a final stage. I added a `docker-compose.yml` file at the root, for running 
 whole application with Docker Compose. I feel that this is a practical way to build the
 app and run the app.
 
-# Backend API Description
+## Backend API Description
 
 This section describes the API endpoints available in the backend.
 
-## GET /api/products
+### GET /api/products
 
 Retrieves a paginated list of products.
 
-### Query Parameters
+#### Query Parameters
 - `page`: Page number (default: 1)
 - `size`: Number of items per page (default: 10)
 
-### Response Body
+#### Response Body
 ```json
 {
   "status": "SUCCESS",
@@ -66,11 +66,11 @@ Retrieves a paginated list of products.
 }
 ```
 
-## GET /api/products/{id}
+### GET /api/products/{id}
 
 Retrieves a specific product by ID.
 
-### Response Body
+#### Response Body
 ```json
 {
   "status": "SUCCESS",
@@ -95,11 +95,11 @@ Retrieves a specific product by ID.
 }
 ```
 
-## POST /api/products
+### POST /api/products
 
 Creates a new product.
 
-### Request Structure
+#### Request Structure
 ```json
 {
   "title": "Product Title",
@@ -112,7 +112,7 @@ Creates a new product.
 }
 ```
 
-### Response Body
+#### Response Body
 ```json
 {
   "status": "SUCCESS",
@@ -137,11 +137,11 @@ Creates a new product.
 }
 ```
 
-## PUT /api/products/{id}
+### PUT /api/products/{id}
 
 Updates an existing product.
 
-### Request Structure
+#### Request Structure
 ```json
 {
   "title": "Updated Product Title",
@@ -154,7 +154,7 @@ Updates an existing product.
 }
 ```
 
-### Response Body
+#### Response Body
 ```json
 {
   "status": "SUCCESS",
@@ -179,11 +179,11 @@ Updates an existing product.
 }
 ```
 
-## DELETE /api/products/{id}
+### DELETE /api/products/{id}
 
 Deletes a product.
 
-### Response Body
+#### Response Body
 ```json
 {
   "status": "SUCCESS",
@@ -192,11 +192,11 @@ Deletes a product.
 }
 ```
 
-## GET /api/sellers
+### GET /api/sellers
 
 Retrieves a list of all sellers.
 
-### Response Body
+#### Response Body
 ```json
 {
   "status": "SUCCESS",
@@ -216,11 +216,11 @@ Retrieves a list of all sellers.
 }
 ```
 
-## Errors
+### Errors
 
 The API may return the following error responses:
 
-### 400 Bad Request
+#### 400 Bad Request
 Returned when the request contains invalid data.
 
 ```json
@@ -231,7 +231,7 @@ Returned when the request contains invalid data.
 }
 ```
 
-### 404 Not Found
+#### 404 Not Found
 Returned when the requested resource does not exist.
 
 ```json
@@ -242,7 +242,7 @@ Returned when the requested resource does not exist.
 }
 ```
 
-### 500 Internal Server Error
+#### 500 Internal Server Error
 Returned when an unexpected error occurs on the server.
 
 ```json
