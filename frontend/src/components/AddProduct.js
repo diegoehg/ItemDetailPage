@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProductDetail.css'; // For layout structure
 import './ProductForm.css'; // For form-specific styles
 import { API_ENDPOINTS } from '../config';
@@ -8,13 +8,39 @@ const AddProduct = ({ onBack, onProductAdded }) => {
     title: '',
     description: '',
     price: '',
-    imageUrl: '' // For adding a single image at a time
+    imageUrl: '', // For adding a single image at a time
+    sellerId: ''
   });
   
   const [images, setImages] = useState([]);
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState(null);
+  const [sellers, setSellers] = useState([]);
+  const [loadingSellers, setLoadingSellers] = useState(false);
+  
+  // Fetch sellers when component mounts
+  useEffect(() => {
+    const fetchSellers = async () => {
+      setLoadingSellers(true);
+      try {
+        const response = await fetch(API_ENDPOINTS.SELLERS);
+        const responseData = await response.json();
+        
+        if (responseData.status === 'SUCCESS') {
+          setSellers(responseData.data);
+        } else {
+          console.error('Error fetching sellers:', responseData.message);
+        }
+      } catch (error) {
+        console.error('Error fetching sellers:', error);
+      } finally {
+        setLoadingSellers(false);
+      }
+    };
+    
+    fetchSellers();
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -59,6 +85,10 @@ const AddProduct = ({ onBack, onProductAdded }) => {
       newErrors.price = 'Price must be a positive number';
     }
     
+    if (!formData.sellerId) {
+      newErrors.sellerId = 'Seller is required';
+    }
+    
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -78,7 +108,8 @@ const AddProduct = ({ onBack, onProductAdded }) => {
         title: formData.title,
         description: formData.description,
         price: parseFloat(formData.price),
-        images: images
+        images: images,
+        seller: formData.sellerId ? { id: parseInt(formData.sellerId) } : null
       };
       
       const response = await fetch(API_ENDPOINTS.PRODUCTS, {
@@ -162,6 +193,27 @@ const AddProduct = ({ onBack, onProductAdded }) => {
                 className={errors.price ? 'error' : ''}
               />
               {errors.price && <div className="error-text">{errors.price}</div>}
+            </div>
+            
+            <div className="form-group">
+              <label htmlFor="sellerId">Seller *</label>
+              <select
+                id="sellerId"
+                name="sellerId"
+                value={formData.sellerId}
+                onChange={handleChange}
+                className={errors.sellerId ? 'error' : ''}
+                disabled={loadingSellers}
+              >
+                <option value="">Select a seller</option>
+                {sellers.map(seller => (
+                  <option key={seller.id} value={seller.id}>
+                    {seller.name}
+                  </option>
+                ))}
+              </select>
+              {errors.sellerId && <div className="error-text">{errors.sellerId}</div>}
+              {loadingSellers && <div className="loading-text">Loading sellers...</div>}
             </div>
             
             <div className="form-group">
