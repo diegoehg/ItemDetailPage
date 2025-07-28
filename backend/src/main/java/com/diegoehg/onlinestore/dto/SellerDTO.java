@@ -3,12 +3,21 @@ package com.diegoehg.onlinestore.dto;
 import java.util.ArrayList;
 import java.util.List;
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 /**
  * Data Transfer Object for Seller
  */
 public class SellerDTO {
     private Long id;
+    
+    @NotBlank(message = "Seller name is required")
+    @Size(max = 255, message = "Seller name must be less than 255 characters")
     private String name;
+    
+    @Valid
     private List<PaymentMethodDTO> paymentMethods = new ArrayList<>();
 
     // Default constructor

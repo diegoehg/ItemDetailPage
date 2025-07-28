@@ -1,6 +1,7 @@
 package com.diegoehg.onlinestore.controller;
 
 import com.diegoehg.onlinestore.dto.ProductDTO;
+import com.diegoehg.onlinestore.dto.SellerDTO;
 import com.diegoehg.onlinestore.exception.ResourceNotFoundException;
 import com.diegoehg.onlinestore.model.PagedResponse;
 import com.diegoehg.onlinestore.model.ResponseStatus;
@@ -153,11 +154,16 @@ class ProductControllerTest {
 
     @Test
     void createProduct() throws Exception {
+        SellerDTO seller = new SellerDTO();
+        seller.setId(1L);
+        seller.setName("Test Seller");
+        
         ProductDTO newProduct = new ProductDTO();
         newProduct.setTitle("New Product");
         newProduct.setDescription("Description for new product");
         newProduct.setImages(Arrays.asList("new-image1.jpg", "new-image2.jpg"));
         newProduct.setPrice(new BigDecimal("199.99"));
+        newProduct.setSeller(seller);
 
         ProductDTO savedProduct = new ProductDTO();
         savedProduct.setId(3L);
@@ -165,6 +171,7 @@ class ProductControllerTest {
         savedProduct.setDescription("Description for new product");
         savedProduct.setImages(Arrays.asList("new-image1.jpg", "new-image2.jpg"));
         savedProduct.setPrice(new BigDecimal("199.99"));
+        savedProduct.setSeller(seller);
 
         when(productService.saveProduct(any(ProductDTO.class))).thenReturn(savedProduct);
 
@@ -181,11 +188,16 @@ class ProductControllerTest {
 
     @Test
     void updateProduct_whenProductExists() throws Exception {
+        SellerDTO seller = new SellerDTO();
+        seller.setId(1L);
+        seller.setName("Test Seller");
+        
         ProductDTO updatedProduct = new ProductDTO();
         updatedProduct.setTitle("Updated Product 1");
         updatedProduct.setDescription("Updated description for product 1");
         updatedProduct.setImages(Arrays.asList("updated-image1.jpg", "updated-image2.jpg"));
         updatedProduct.setPrice(new BigDecimal("129.99"));
+        updatedProduct.setSeller(seller);
 
         ProductDTO savedUpdatedProduct = new ProductDTO();
         savedUpdatedProduct.setId(1L);
@@ -193,6 +205,7 @@ class ProductControllerTest {
         savedUpdatedProduct.setDescription("Updated description for product 1");
         savedUpdatedProduct.setImages(Arrays.asList("updated-image1.jpg", "updated-image2.jpg"));
         savedUpdatedProduct.setPrice(new BigDecimal("129.99"));
+        savedUpdatedProduct.setSeller(seller);
 
         when(productService.updateProduct(eq(1L), any(ProductDTO.class))).thenReturn(savedUpdatedProduct);
 
@@ -211,11 +224,16 @@ class ProductControllerTest {
     void updateProduct_whenProductDoesNotExist() throws Exception {
         ResourceNotFoundException exception = new ResourceNotFoundException("Product", "3");
 
+        SellerDTO seller = new SellerDTO();
+        seller.setId(1L);
+        seller.setName("Test Seller");
+        
         ProductDTO updatedProduct = new ProductDTO();
         updatedProduct.setTitle("Updated Product 1");
         updatedProduct.setDescription("Updated description for product 1");
         updatedProduct.setImages(Arrays.asList("updated-image1.jpg", "updated-image2.jpg"));
         updatedProduct.setPrice(new BigDecimal("129.99"));
+        updatedProduct.setSeller(seller);
 
         when(productService.updateProduct(eq(3L), any(ProductDTO.class))).thenThrow(exception);
 
