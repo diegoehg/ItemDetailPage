@@ -33,21 +33,14 @@ function App() {
       })
       .then(response => {
         if (response.status === 'SUCCESS') {
-          // Check if the response data has pagination information
-          if (response.data.content) {
-            // It's a paginated response
-            const pagedData = response.data;
-            setProducts(pagedData.content);
-            setCurrentPage(pagedData.page);
-            setPageSize(pagedData.size);
-            setTotalPages(pagedData.totalPages);
-            setTotalElements(pagedData.totalElements);
-            setIsFirstPage(pagedData.first);
-            setIsLastPage(pagedData.last);
-          } else {
-            // It's a regular list response
-            setProducts(response.data);
-          }
+          setProducts(response.data.content);
+          setCurrentPage(response.data.page);
+          setPageSize(response.data.size);
+          setTotalPages(response.data.totalPages);
+          setTotalElements(response.data.totalElements);
+          setIsFirstPage(response.data.first);
+          setIsLastPage(response.data.last);
+
           setLoading(false);
         } else {
           throw new Error(response.message || 'Failed to load products');
@@ -88,8 +81,8 @@ function App() {
   const handleProductAdded = (newProduct) => {
     // Add the new product to the list or refresh the list
     setProducts([...products, newProduct]);
-    // Alternatively, refetch all products
-    // fetchProducts();
+
+    fetchProducts();
   };
 
   const handleProductUpdated = (updatedProduct) => {
@@ -97,8 +90,8 @@ function App() {
     setProducts(products.map(p => 
       p.id === updatedProduct.id ? updatedProduct : p
     ));
-    // Alternatively, refetch all products
-    // fetchProducts();
+
+    fetchProducts();
   };
   
   // Pagination handlers
