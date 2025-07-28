@@ -53,9 +53,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public ProductDTO getProductById(Long id) {
-        Product product = productRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Product", String.valueOf(id)));
-        return EntityDTOMapper.toProductDTO(product);
+        return EntityDTOMapper.toProductDTO(findById(id));
     }
 
     @Override
@@ -67,15 +65,12 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public void deleteProduct(Long id) {
-        productRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Product", String.valueOf(id)));
-        productRepository.deleteById(id);
+        productRepository.deleteById(findById(id).getId());
     }
 
     @Override
     public ProductDTO updateProduct(Long id, ProductDTO productDTO) {
-        Product product = productRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Product", String.valueOf(id)));
-
+        Product product = findById(id);
         product.setTitle(productDTO.getTitle());
         product.setDescription(productDTO.getDescription());
         product.setImages(productDTO.getImages());
@@ -87,5 +82,10 @@ public class ProductServiceImpl implements ProductService {
 
         Product updatedProduct = productRepository.save(product);
         return EntityDTOMapper.toProductDTO(updatedProduct);
+    }
+
+    private Product findById(Long id) {
+        return productRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Product", String.valueOf(id)));
     }
 }
