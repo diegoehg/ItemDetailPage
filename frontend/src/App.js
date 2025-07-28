@@ -4,6 +4,7 @@ import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
 import AddProduct from './components/AddProduct';
 import EditProduct from './components/EditProduct';
+import { API_ENDPOINTS } from './config';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -23,7 +24,7 @@ function App() {
 
   const fetchProducts = (page = currentPage, size = pageSize) => {
     setLoading(true);
-    fetch(`http://localhost:8080/api/products?page=${page}&size=${size}`)
+    fetch(`${API_ENDPOINTS.PRODUCTS}?page=${page}&size=${size}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

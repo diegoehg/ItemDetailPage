@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ProductDetail.css'; // For layout structure
 import './ProductForm.css'; // For form-specific styles
+import { API_ENDPOINTS } from '../config';
 
 const EditProduct = ({ product, onBack, onProductUpdated }) => {
   const [formData, setFormData] = useState({
@@ -95,7 +96,7 @@ const EditProduct = ({ product, onBack, onProductUpdated }) => {
         images: images
       };
       
-      const response = await fetch(`http://localhost:8080/api/products/${product.id}`, {
+      const response = await fetch(`${API_ENDPOINTS.PRODUCTS}/${product.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
