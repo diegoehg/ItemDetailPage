@@ -20,7 +20,7 @@ FROM eclipse-temurin:21-jre-alpine
 COPY --from=build /usr/src/mymaven/target/online-store-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port the app runs on
-EXPOSE 8080
+EXPOSE 9090
 
 # Run the application
 CMD ["java", "-jar", "app.jar"]

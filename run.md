@@ -21,8 +21,8 @@ docker compose up --detach --build
 
 This is what you are going to see:
 - Backend app has a `DataInitialization` config that will populate the database with some predetermined data.
-- Front is served at `http://localhost:80`
-- Back is served at `http://localhost:8080`
+- Front is served at `http://localhost:3000`
+- Back is served at `http://localhost:9090`
 
 You can shut down the application by running the following command:
 ```
