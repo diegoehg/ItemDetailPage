@@ -43,6 +43,16 @@ table that associates different Sellers with different Payment Methods.
 `products_images` contains URLs of a product's pictures. I feel that it is more
 flexible to save the images' URLs in its own table.
 
+### Service Layer
+In this application, this layer has two purposes: converting entities into DTOs, and
+validating if an ID corresponds to an existing element.
+
+Given that there is a relationship between Product and Seller entities, one way to
+avoid infinite recursion when parsing the entity data to JSON is to use DTO, to select
+which information to pass through the API. Besides that, it decouples an entity
+structure from a response structure. I put the entity-to-DTO conversion logic inside
+a mapper. This mapper is invoked from the service layer.
+
 ## Backend API Description
 
 This section describes the API endpoints available in the backend.
