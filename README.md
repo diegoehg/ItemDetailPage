@@ -61,6 +61,9 @@ for this purpose.
 
 ## Backend API Description
 
+There is an OpenAPI description generated at
+[http://localhost:9090/swagger-ui/index.html](http://localhost:9090/swagger-ui/index.html).
+
 This section describes the API endpoints available in the backend.
 
 ### GET /api/products
